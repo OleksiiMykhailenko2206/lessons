@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css"> <!--підключаємо файл стилів -->
+   <title>Lesson-3</title>
+</head>
+
+<body>
+   <header class="header"> <!--це хедер - верхня частина сайту-->
+      <div class="label">
+         <h1 id="start">Домашня робота &#8470;3 (перероблена майже повністтю з ДЗ-&#8470;2 )
+         </h1> <!--це заголовок Н1 головний і єдиний на цій сторінці-->
+         <h2>Сьогодні попрацюємо з HTML тегами та файлом CSS+обнулення <mark>та
+               інше!</mark><!-- заголовки Н2-Н6 пиши скільки захочеш-->
+         </h2>
+         <h3>
+            <mark>Загальна структура:</mark>
+         </h3>
+      </div>
+      <div class="list">
+         <ul> <!-- обгортка списку, без неї li не працює-->
+            <li>header
+               <ul>
+                  <li>div </li><!-- пункт списку, без нього ul, ol не працює-->
+                  <li>H1, H2, H3</li>
+                  <li> Пункти списку
+                     <ul>
+                        <li>Підпункти списку</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>main
+               <ol>
+                  <li>Простий кубик</li>
+                  <li><a href="#simple-structure">Купка простих кубиків</a>
+                     <ul>
+                        <li><span> <a href="#first-text">Супроводжувальний текст 1</a></span></li>
+                     </ul>
+                  </li>
+                  <li><a href="#tower">Цікаві структури</a>
+                     <ul>
+                        <li><span> <a href="#second-text">Супроводжувальний текст 2</a></span></li>
+                     </ul>
+                  </li>
+               </ol>
+            </li>
+            <li> <mark> <a href="#end">Йдемо в футер</a></mark></li>
+            <li><span>Корисні ресурси</span>
+               <ol>
+                  <li><a id="lingva-latina"
+                        href="https://uk.wikipedia.org/wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%BC%D0%BE%D0%B2%D0%B0">Латинська
+                        мова, для тих хто не розуміє "lorem ipsum"</a>
+                  </li><!--зовнішнє посилання в поточній вкладці-->
+                  <li><a target="_blank" href="https://www.w3schools.com/html/html_basic.asp"><span>w3schools</span></a>
+                  </li><!-- зовнішнє посилання в новій вкладці-->
+                  <li> <a target="_blank" href="https://caninclude.glitch.me/"><span>Перевірка вкладості</span></a>
+                  </li><!-- зовнішнє посилання в новій вкладці-->
+               </ol>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <main>
+      <div class="simple">
+         <h2> Великі справи
+            <span><a href="#complicated"><img src="img/kubik.jpg" alt="blue cube"></a>
+            </span>
+            починаються з малогою
+            <br> В даному заголовку нереальні вкладення, а саме:
+            <br> Н2 містить span, в якому
+            знаходиться посилання, яке включає в себе зображення.
+         </h2> <!--тут у нас вкладення дай Боже -->
+         <div id="simple-structure">
+            <img src="img/simple_cube.jpg" alt="a few colored cubes">
+         </div>
+         <div id="first-text" class="description-01">
+            <p><!-- тут багато тексту з використанням span, br, a, mark   -->
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo tenetur ipsum cum expedita aspernatur
+               quisquam, similique consequuntur atque sapiente, voluptatem facere. Consequatur doloribus accusantium
+               minima
+               eius illo voluptates odit delectus <span>possimus quas itaque quia</span> dolores molestiae pariatur
+               totam,
+               quam quo?
+               <br> Ducimus eius similique ad distinctio nemo, tenetur ipsum porro exercitationem temporibus optio
+               maiores
+               quod culpa cum, provident quibusdam consequatur, veniam natus? Similique
+               reprehenderit libero quisquam officia animi, vitae ex, qui eos. <span> quibusdam, debitis commodi
+                  atque</span>
+            </p>
+            <p>
+               <span>
+                  <mark> Ea, corporis quae! Quaerat sequi ratione sed, blanditiis cum odit magni corporis asperiores,
+                     error quis illo</mark>
+                  animi ex nam enim, repellendus nulla voluptas dolores. Reiciendis, vitae iste. Sapiente et esse magni
+                  alias
+                  vel. Nam est iusto quasi necessitatibus officiis modi harum. Vel autem quidem modi similique
+                  architecto
+                  doloribus facilis velit earum suscipit consequatur corporis nihil, unde vitae animi! Sint amet,
+                  delectus
+                  obcaecati dolore sequi accusamus debitis error, iure aliquam hic alias earum, mollitia voluptatum
+                  officia est
+                  nam minus voluptate explicabo autem! Iusto odit optio delectus temporibus perspiciatis officiis vitae
+                  laborum
+                  quas qui ipsam
+               </span>
+            </p>
+            <p>
+               <mark>
+                  facere quod sint, eveniet odio, beatae blanditiis totam ipsum pariatur quos! Accusamus facilis in
+                  corrupti,
+                  provident dolores autem dicta vel asperiores debitis ut? Similique corporis, omnis explicabo autem
+                  laboriosam quisquam cum?
+               </mark>
+            </p>
+            <p>
+               <span>Lorem ipsum dolor sit
+                  <mark> <a href="#lingva-latina">для перекладу є посилання зверху</a>
+                  </mark><!-- тут посилання, вставлене в mark,  який знаходиться в span, який знаходиться в p-->
+                  amet consectetur adipisicing elit.
+               </span>
+               Excepturi,
+               <br> cum! Tenetur pariatur necessitatibus vel non? Adipisci molestias fugit omnis dignissimos, quo
+               possimus
+               mollitia exercitationem eos, pariatur ea vel iste soluta deserunt ullam, quia nobis obcaecati
+               <br> magnam vero laborum at neque sit. Amet id soluta cupiditate odit consequatur ex mollitia minima
+               error
+               ducimus facere ipsam ipsa, quam expedita necessitatibus eligendi debitis culpa velit officia? Aliquid rem
+               commodi eligendi ullam, rerum cumque magnam reiciendis animi quae hic eius deserunt blanditiis maiores,
+               fugit explicabo. Ipsa, a atque? Itaque facilis, perferendis animi amet eligendi consequatur dolorem,
+               necessitatibus dolor nam numquam tempora veritatis expedita exercitationem quo architecto? Corrupti
+               consectetur magnam beatae minima, in obcaecati veritatis ratione molestias ex quidem dolorem harum,
+               tempora
+               sint exercitationem alias.
+            </p>
+         </div>
+      </div>
+      <p></p><!--відступ-->
+      <p></p>
+      <div class="smart">
+         <h2><span>Маючи добрий фундамент - можна побудувати серйозні речі</span></h2>
+         <div id="complicated">
+            <div class="image">
+               <img id="tower" src="img/cube.jpg" alt="cubes tower">
+            </div>
+            <div id="second-text" class="description-02">
+               <p>
+                  <mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut laboriosam optio
+                     <br> ut exercitationem excepturi,
+                     <br>voluptate saepe sunt doloremque quos ex repellendus dolorum dolorem nostrum! Officiis,
+                     <br>culpa velit! Veniam libero rem similique nesciunt aspernatur. Facilis libero sunt
+                     <br>accusantium tempora ex? Hic, vero quibusdam.
+                  </mark>
+               </p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut laboriosam optio unde autem
+               <a href="#">consequuntur perferendis</a> ipsum rerum fugit, ut
+               <br> exercitationem excepturi, voluptate
+               saepe sunt
+               doloremque
+               quos ex repellendus dolorum dolorem nostrum! Officiis, culpa velit! Veniam libero rem similique nesciunt
+               aspernatur.<br> Facilis libero sunt accusantium tempora ex? Hic, vero quibusdam.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut laboriosam optio unde autem
+               consequuntur perferendis ipsum rerum fugit, ut <br>exercitationem excepturi, voluptate saepe sunt
+               doloremque
+               quos ex repellendus dolorum dolorem nostrum! Officiis, culpa velit! Veniam libero rem similique nesciunt
+               aspernatur. Facilis libero sunt accusantium tempora ex? Hic, vero quibusdam.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut laboriosam optio unde autem
+               consequuntur perferendis ipsum rerum fugit, ut exercitationem excepturi, voluptate saepe sunt doloremque
+               quos ex repellendus dolorum dolorem nostrum! Officiis, culpa velit! Veniam libero rem similique nesciunt
+               aspernatur. Facilis libero sunt accusantium tempora ex? Hic, vero quibusdam.
+            </p>
+         </div>
+      </div>
+   </main>
+   <footer class="footer"><!--footer єдиний на сторінці та завжди внизу-->
+      <div id="end"> <!--безпосередньо вкладений в footer елемент 1 рівня-->
+         <div> <!-- елемент 2 рівня-->
+            <h2>Привіт! Я - футер! <br>
+               рано чи пізно вони таки притиснуть мене до низу сторінки...
+            </h2>
+         </div>
+         <div>
+            <h3>
+               <span>Фрілансер по життю осінь 2023</span>
+            </h3>
+         </div>
+         <div class="page-02">
+            <a href="not-found.html"><span> Наступна сторінка</span> </a>
+         </div>
+         <div>
+            <h3>
+               <a href="#start"><mark>летимо догори</mark> <img src="img/arrow.ico"
+                     alt="arrow to top"></a><!--вкладеність в тег А вкладено mark ta img-->
+            </h3>
+         </div>
+         <div class="rigts">
+            <span>&copy;all rigts reserved</span>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
