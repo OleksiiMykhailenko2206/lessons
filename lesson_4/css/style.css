@@ -1,0 +1,135 @@
+/*обнулення*/
+@import url(reset.css);
+
+/*Основні стилі*/
+
+*{             /* найнижчий  приорітет*/
+   color: rgb(68, 142, 233);
+}
+
+/*стилі тексту, списку, посилань*/
+
+p {
+   color: red;/*звернення до тегу Р*/
+}
+
+.text {
+   color: green;/*звернення до всіх елементів класу text*/
+}
+
+.text p {
+   color: red;/*звернення до класу text за тегом  Р*/
+}
+
+.text.test-class p {/*звернення до класу text з класом test-class  за тегом  Р*/
+   color: green;
+}
+
+li span a {
+   color: rgb(6, 108, 126);/*звернення до *а* який знаходиться в span в пункті списку li*/
+}
+
+[class*="subti"] { /*селектор атрибуту класу пошук subtitle з запитом subti */
+   color: blueviolet;
+}
+
+div.subtitle h2 span{/*+уточнення - вищий приорітет*/
+   color: coral;
+}
+
+a {
+   color: gold;/*звернення до всіх а*/
+}
+
+.text span a {/*звернення до всіх а всередині span класу text */
+   color: blue;
+}
+
+.text > p { /*звернення до всіх тегів р першого рівня вкладеності text*/
+   color: rgb(161, 10, 128);
+}
+
+#main-text span {
+   color: rgb(210, 12, 177);
+}
+
+.alternative .subtitle { /*звернення до класу всередині класу*/
+   color: rgb(126, 177, 24);
+}
+
+div.text {  /*звернення до всіх div в кого є  клас text*/
+   color: rgb(199, 179, 26);
+}
+
+.alternative-subtitle + div li{ /*не знаю як це назвати*/
+   color: rgb(209, 12, 12);
+}
+
+.navigation-list ol li ul a {
+   color: red;
+}
+
+.actors-list li { /*однаковий приорітет різні теги*/
+   color: orange;
+}
+
+.actors-list a { /*однаковий приорітет різні теги*/
+   color: blue;
+}
+/*
+.actors-list li a {  
+   color: orange;  уточнення - вищий приорітет
+}
+*/
+#sound { /*звернення по id*/
+   color: yellowgreen
+}
+
+#sound li {/*звернення по id уточнення*/
+   color: darkgray;
+}
+
+#sound li span {/*звернення по id уточнення*/
+   color: chocolate;
+}
+#sound li span mark {/*звернення по id уточнення*/
+   color: cornflowerblue;
+}
+
+#sound.sound-block span { /*звернення по id + клас  уточнення*/
+   color: blueviolet;
+}
+
+span,
+h2,
+.subtitle,
+#production  {  /*звернення до переліку класів тегів id*/
+   color: black;
+}
+
+.production ~ div {
+   color: darkgreen;
+}
+
+/*стилі для списку sources чотири елемента в пункті li*/
+
+.sources-list li a {
+   color: rgb(233, 37, 7);
+}
+
+.sources-list span a {
+   color: green;
+}
+
+.sources-list i {
+   color: grey;
+}
+
+.sources-list b {
+   color: rgb(0, 98, 255);
+}
+
+/* впливаємо на н2, який іде далі по коду після songs-subtitle і має той самий рівень вкладеності*/
+.songs-subtitle ~ h2{ 
+   color: burlywood;
+}
