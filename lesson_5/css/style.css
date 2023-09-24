@@ -1,0 +1,116 @@
+/*null*/
+@import url("reset.css");
+/*fonts */
+/*import from goole fonts*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+Nabataean:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Borel:regular&display=swap");
+/*manual import*/
+@font-face {
+   font-family: "Fabada";
+   src: url(../fonts/fabada/Fabada-regular.woff2);
+   src: url(../fonts/fabada/Fabada-regular.woff);
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Gabriel";
+   src: url(../fonts/gabriel/Gabriel-Serif-Bold.woff2);
+   src: url(../fonts/gabriel/Gabriel-Serif-Bold.woff);
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Gabriel";
+   src: url(../fonts/gabriel/Gabriel-Serif.woff2);
+   src: url(../fonts/gabriel/Gabriel-Serif.woff);
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "QuickKiss";
+   src: url(../fonts/quickkiss/QuickKissPersonalUse-PxlZ.woff2);
+   src: url(../fonts/quickkiss/QuickKissPersonalUse-PxlZ.woff);
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+/*main styles*/
+body{
+   /*font-family: inter;*/
+   font-family: fabada;
+   /*font-family: gabriel;*/
+   /*font-family: quickkiss;*/
+   font-size: 18px;
+   line-height: 1.2;
+   color: black;
+}
+/*text styles for maket blocks*/
+[class*="title"]{
+   font-family: poppins;
+   color: #37393F;
+   line-height: 1.27;
+}
+.maket p,
+.list li {
+   font-family: Inter;
+   color: #7D7D7D;
+   font-size: 18px;
+   line-height: 1.46;
+}
+.list li{
+   font-weight: 500;
+}
+.maket p{
+   font-weight: 400;
+}
+.consulting-title{
+   font-size: 30px;
+   font-weight: 600;
+}
+.information-title{
+   font-size: 40px;
+   font-weight: 700;
+}
+
+.subtitle-maket{
+   color: #6B77E5;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+/*text styles for main article*/
+h1{
+   font-family: gabriel;
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #6B77E5;
+   letter-spacing: 5px;
+   text-shadow: 3px -3px 5px grey;
+}
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   color: darkblue;
+   line-height: 1.25;
+}
+.nav{
+   font-size: 20px;
+   color: darkmagenta;
+   letter-spacing: 2px;
+}
+div + span{
+   font-size: 14px;
+   color: rgb(34, 175, 39);
+}
+img ~ span {
+   color: crimson;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 3px;
+}
