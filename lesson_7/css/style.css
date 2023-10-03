@@ -1,0 +1,253 @@
+/*fonts file import*/
+@import url("fonts.css");
+/*null styles import*/
+@import url("reset.css");
+body{
+   width: 100%;
+}
+/*header styles*/
+.nav {
+   max-width: 70%;
+   margin: 100px auto;
+   font-weight: 500;
+   font-family: Pixelify Sans;
+   text-transform: uppercase;
+}
+.nav h1{
+   text-align: center;
+   line-height: 1.5;
+   font-size: 70px;
+   color: rgb(222, 30, 12);
+   text-shadow: -3px 5px 10px blueviolet ;
+   margin-bottom: 100px;
+}
+.nav ul {
+   max-width: 80%;
+   margin: 0 auto  70px auto;
+}
+.nav li{
+   line-height: 1.45;
+   font-size: 22px;
+   color: rgb(189, 10, 10);
+   margin-bottom: 20px;
+}
+.nav ol{
+   padding: 20px 0 0 40px;
+}
+.nav a {
+   color: #8A33FD;
+   text-decoration: underline;
+}
+/*consulting block styles*/
+.consulting{
+   color: #7D7D7D;
+   font-size: 18px;
+   font-family: Inter;
+   max-width: 830px;
+   margin: 0 auto 150px auto;
+   border: 2px solid red;
+   border-radius: 10px;
+}
+.consulting-title{
+   margin-bottom: 13px;
+}
+.consulting-title h2{
+   color: #37393F;
+   font-size: 40px;
+   font-family: Poppins;
+   font-weight: 700;
+   line-height: 1.27;
+}
+.consulting-text p{
+   line-height: 1.46;
+   margin-bottom: 35px;
+}
+.consulting ul li,
+.consulting ol li{
+   font-weight: 500;
+   line-height: 1.46;
+   margin-bottom: 35px;
+}
+.consulting ul li{
+   padding-left: 16px;
+}
+/*licencing styles*/
+.licencing{
+   margin: 0 auto 150px auto;
+   max-width: 1218px;
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 1.46;
+   border-left: 3px solid #8A33FD;
+   border-right: 3px solid #8A33FD;
+}
+.licencing-title {
+   text-align: center;
+   color: #37393F;
+   font-weight: 500;
+   line-height: 1.2;
+   margin-bottom: 70px;
+}
+.licencing-title span{
+   margin-bottom: 16px;
+}
+.cube {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background-color: #40DDB6;
+}
+.icons {
+   margin-bottom: 100px;
+}
+.licencing h2,
+.licencing h3{
+   color: #37393F;
+   font-family: Poppins;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.licencing h2{
+   font-size: 40px;
+   margin-bottom: 11px;
+}
+.licencing h3{
+   font-size: 30px;
+}
+.licencing-title h2{
+   font-size: 60px;
+}
+.icons p{
+   margin-bottom: 32px;
+}
+.licencing h3 span{
+   color: #40DDB6;
+   font-weight: 400;
+}
+.photography {
+   margin-bottom: 100px;
+}
+.photography p:not(:last-child){
+   margin-bottom: 32px;
+}
+.fonts span {
+   font-weight: 500;
+}
+/*clothing styles*/
+.clothing {
+   max-width: 1240px;
+   margin: 0 auto 150px auto;
+   color: #807D7E;
+   font-family: Causten;
+   font-size: 20px;
+   line-height: 1.7;
+   letter-spacing: 0.4px;
+   border: 1px solid #F6F6F6;
+   box-shadow: 2px 5px 5px #7D7D7D;
+   margin-bottom: 150px;
+}
+.clothing-title {
+   margin-bottom: 30px;
+}
+.clothing h2,
+.clothing h3{
+   font-family: Core Sans C;
+   font-weight: 600;
+}
+.pre-title {
+   display: inline-block;
+   width: 6px;
+   height: 28px;
+   border-radius: 10px;
+   background: #8A33FD;
+   margin-right: 15px;
+   vertical-align: middle;
+}
+.clothing-title h2{
+   display: inline-block;
+   color: #3C4242;
+   font-size: 28px;
+   line-height: 1.2; 
+   letter-spacing: 0.56px;
+}
+.clothing span{
+   font-weight: 700;
+}
+.clothing p{
+   margin-bottom: 20px;
+}
+.clothing .strage-p{
+   margin-bottom: 25px;
+}
+.clothing h3:not(:last-child){
+   margin-bottom: 25px;
+}
+.clothing-text {
+   padding-left: 21px;
+}
+/*custom jewellery styles*/
+.custom {
+   max-width: 1103px;
+   max-height: 519px;
+   margin: 0 auto 150px auto;
+   box-shadow: -5px 3px 10px #D58417;
+   font-family: Cormorant Infant;
+   color: #606060;
+   font-size: 0;
+   font-weight: 700;
+   line-height: 1.4;
+}
+.custom-text {
+   max-width: 503px;
+   display: inline-block;
+   padding: 70px 0;
+   margin-right: 85px;
+}
+.custom-text h3{
+   color: #D58417;
+   font-size: 20px;
+}
+.custom-text h2{
+   color: #000;
+   font-size: 64px;
+  
+}
+.custom-text p{
+   font-size: 30px;
+   padding-right: 14px;
+}
+.custom-images {
+   display: inline-block;
+   vertical-align: top;
+   font-size: 0;
+   max-width: 514px;
+   max-height: 500px;
+}
+.model-01{
+   max-height: 336px; 
+   max-width: 177px;
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 30px;
+   border-radius: 235px;
+   border: 1px solid #502203;
+}
+.model-02{
+   max-width: 307px;
+   max-height: 500px;
+   display: inline-block;
+   vertical-align: middle;
+   max-width: 307px;
+   border-radius: 235px;
+   border: 1px solid #502203;
+}
+.model-01 img{
+   padding: 14px 10px 0 0;
+   margin-left: -10px;
+   }
+.model-02 img{
+   padding: 19px 11px 0 0;
+   margin-left: -11px;
+   
+}
