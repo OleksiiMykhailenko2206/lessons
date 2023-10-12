@@ -1,0 +1,468 @@
+/*fonts*/
+@import url("fonts.css");
+/*reset*/
+@import url("reset.css");
+/*practice styles*/
+
+body{
+   width: 100%;
+   height: 100%;
+}
+.header{
+   max-width: 100%;
+   padding: 70px;
+}
+.top-title h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-family: Poppins;
+   font-weight: 700;
+   line-height: 1.6;
+   font-size: 50px;
+   letter-spacing: 3px;
+   background: linear-gradient(43deg, rgb(114, 113, 226) 28%, rgba(5,203,11,0.5) 40%, rgba(200, 42, 176, 0.763) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top-title {
+   margin-bottom: 50px;
+}
+.top-list{
+   max-width: 80%;
+   margin: 0 auto;
+}
+.top-list ul {
+   text-align: center;
+}
+.top-list li{
+   font-family: Inter;
+   font-size:  20px;
+   line-height: 1.6;
+   color: rgb(26, 3, 3);
+   display: inline-block;
+   min-height: 42px;
+   padding: 7px 40px;
+   text-transform: uppercase;
+   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   border-radius: 8px;
+}
+.top-list li:hover,
+.top-list li:active{
+   color: rgb(250, 250, 250);
+   outline: 1px solid #1f33e2;
+   transition: all 0.3s;
+}
+.top-list li:not(:last-child) {
+  margin-right: 40px;
+}
+.test-section{
+   max-width: 900px;
+   margin: 0 auto 150px auto;
+   padding: 50px;
+   background: linear-gradient(180deg, rgba(34,107,195,1) 20%, rgba(250,227,7,1) 80%);
+}
+[class*=cube]{
+   font-size: 18px;
+   font-family: Inter;
+   overflow: hidden;
+}
+.multi-cube{
+   margin-bottom: 150px;
+}
+.rectangle-top,
+.rectangle-bottom {
+   font-size: 0;
+}
+.cube-1 {
+   background-color: green;
+}
+.cube-2 {
+   background-color: red;
+}
+.cube-3 {
+   background-color: violet;
+}
+.cube-4 {
+   background-color: rgb(43, 0, 255);
+}
+.cube-1,
+.cube-2,
+.cube-3,
+.cube-4{
+   display: inline-block;
+   height: 400px;
+   width: 400px;
+   padding: 20px;
+}
+.img-bg-cube{
+   margin-bottom: 150px;
+   width: 800px;
+   height: 800px;
+   padding: 20px;
+   background: url("../img/green.jpg") 50% 50% / 80% 80% no-repeat,
+               url("../img/blue.jpg") 0 0 / 50% 50% no-repeat,
+               url("../img/red.jpg") 100% 0 / 50% 50% no-repeat,
+               url("../img/gold.jpg") 0 100% / 50% 50% no-repeat,
+               url("../img/violet.jpg") 100% 100% / 50% 50% no-repeat;
+}
+.multi-bg-cube{
+   margin-bottom: 150px;
+   width: 800px;
+   height: 800px;
+   padding: 20px;
+   background: url("../img/violet.jpg") 0 0 / 40% 40% no-repeat,
+               url("../img/gold.jpg") 0 100% / 40% 40% no-repeat,
+               url("../img/red.jpg") 100% 0 / 40% 40% no-repeat,
+               url("../img/brown.jpg") 100% 100% / 40% 40% no-repeat,
+               greenyellow;
+}
+.gradient-cube{
+   width: 800px;
+   height: 800px;
+   background: radial-gradient(at 100% 100%,rgba(250,3,3,1) 0%, rgba(250,243,5,1) 59%) 15% 15% / 40% 40% no-repeat,
+               radial-gradient(at 100% 0,rgba(250,3,3,1) 0%, rgba(39,250,5,1) 59%) 15% 85% / 40% 40% no-repeat,
+               radial-gradient(at 0 100%,rgba(250,3,3,1) 0%, rgba(202,5,250,1) 59%) 85% 15% / 40% 40% no-repeat,
+               radial-gradient(at 0 0, rgba(250,3,3,1) 0%, rgba(5,158,250,1) 59%) 85% 85% / 40% 40% no-repeat;
+   background-color: rgb(105, 241, 230);
+   padding: 70px;
+   border-radius: 80px;
+}
+/*consulting maket, business-01 block styles*/
+.business-01,
+.business-02 {
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 1.46;
+   color: #7D7D7D;
+   margin-bottom: 150px;
+}
+.business-container {
+   max-width: 675px;
+   margin: 0 auto;
+}
+.business-titles {
+   max-width: 413px;
+   margin-bottom: 10px;
+   color: #37393F;
+   line-height: 1.2;
+}
+.business-titles h3{
+   line-height: 1.2;
+   font-weight: 500;
+   background: url("../img/title.png") 0 5px / 12px 12px no-repeat;
+   padding-left: 18px;
+   min-height: 22px;
+   margin-bottom: 16px;
+}
+.business-titles h2{
+   font-family: Poppins;
+   font-size: 40px;
+   font-weight: 700;
+}
+.business-text {
+   margin-bottom: 48px;
+}
+.business-text p:not(:last-child){
+   margin-bottom: 16px;
+}
+.cards{
+   padding: 28px 41px 28px 38px;
+   margin-bottom: 48px;
+}
+.cards-text{
+   padding-left: 46px;
+   background: url("../img/check.png") 0 0 no-repeat;
+}
+.cards-text h4{
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.5;
+   color: #37393F;
+   margin-bottom: 12px;
+}
+.vision {
+   margin-bottom: 31px;
+}
+.business-01 a,
+.business-02 a{
+   width: 200px;
+   height: 65px;
+   color: #FFFFFF;
+   font-weight: 600;
+   line-height: 1.2;
+   padding: 22px 35px;
+   background-color: #6B77E5;
+   text-align: center;
+}
+.business-01 a:hover,
+.business-02 a:hover,
+.business-01 a:active,
+.business-02 a:active{
+   background-color: #1f33e2;
+   box-shadow: 2px 1px 5px blue;
+   color:  #FFFFFF;
+   transition: all 0.3s;
+}
+/*consulting maket, business-02 block styles*/
+.business-titles.titles-02{
+   margin-bottom: 20px;
+}
+.business-text.text-02{
+   margin-bottom: 20px;
+}
+.business-text.text-02 p:not(:last-child){
+   margin-bottom: 15px;
+}
+.business-list{
+   margin-bottom: 43px;
+}
+.business-list li{
+   font-family:Poppins;
+   font-size: 20px;
+   margin-bottom: 23px;
+   line-height: 1.5;
+   color: #37393F;
+   padding-left: 35px;
+   background: url("../img/check.png") 0 2px no-repeat;
+   min-height: 30px;
+}
+.cards-02{
+   max-width: 613px;
+   margin-bottom: 27px;
+}
+.experience,
+.awards{
+   display: inline-block;
+   max-width: 295px;
+   padding: 32px;
+}
+.cards-text-01,
+.cards-text-02{
+   min-width: 231px;
+   font-size: 16px;
+   line-height: 1.35;
+   padding-left: 58px;
+}
+.cards-text-01{
+   background: url("../img/expir.svg") 0 0  no-repeat;
+}
+.cards-text-02{
+   background: url("../img/ewards.svg") 0 0  no-repeat;
+}
+.cards-02 h4{
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.5;
+   color: #37393F;
+}
+/*consulting maket, discover block styles*/
+.discover {
+   margin-bottom: 150px;
+}
+.discover-container {
+   max-width: 1220px;
+   margin: 0 auto;
+   font-family: Poppins;
+   color: #37393F;
+}
+.discover-title {
+   max-width: 852px;
+   text-align: center;
+   margin: 0 auto 47px auto;
+}
+.discover-title > *:not(:last-child) {
+	margin-bottom: 14px;
+}
+.title-deco{
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 1.2;
+   min-height: 22px;
+}
+.title-deco h3::before{
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: url("../img/title.png");
+   display: inline-block;
+}
+.discover-title h2{
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.discover-title p{
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 1.46;
+   color: #7D7D7D;
+}
+.discover-cards {
+   max-width: 1254px;
+   font-size: 0;
+}
+[class^=item] {
+   min-width: 384px;
+   max-height: 582px;
+   padding-top: 525px;
+   display: inline-block;
+}
+.discover-cards h3{
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.25;
+   margin-bottom: 10px;
+}
+.cards-top{
+   margin-bottom: 58px;
+}
+.item-fin{
+   background: url("../img/discover-01.png") no-repeat;
+   margin-right: 34px;
+}
+.item-mark{
+   background: url("../img/discover-02.png") no-repeat;
+   margin-right: 34px;
+}
+.item-busi{
+   background: url("../img/discover-03.png") no-repeat;
+}
+.item-finan {
+   background: url("../img/discover-04.png") no-repeat;
+   margin-right: 34px;
+}
+.item-deve {
+   background: url("../img/discover-05.png") no-repeat;
+   margin-right: 34px;
+}
+.item-invest {
+   background: url("../img/discover-06.png") no-repeat;
+}
+.discover span{
+   font-family: Inter;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.46;
+   color: #7D7D7D;
+   display: inline-block;
+   min-height: 22px;
+   padding-left: 26px;
+   background: url("../img/calend.svg") no-repeat;
+}
+/*euephoria maket, fashion block styles*/
+.fashion{
+margin-bottom: 150px;
+}
+.fashion-container {
+   max-width: 1240px;
+   margin: 0 auto;
+}
+.fashion-content {
+   font-family: Causten;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 1px;
+   height:640px;
+   padding: 183px 74px 74px 74px ; /*I left more space from bottom for new content*/
+   background: url("../img/fashion-text-bg.jpg") no-repeat,
+               url("../img/fashion-image-bg.png") 100%  no-repeat;
+   border-radius: 8px;
+   color: #FFFFFF;
+}
+.fashion-content h2{
+   font-family: Core Sans C;
+   font-size: 34px;
+   line-height: 1.47;
+   font-weight: 800;
+   letter-spacing: 0.21px;
+   margin-bottom: 30px;
+   max-width: 466px;
+}
+.fashion-content p{
+   max-width: 451px;
+   margin-bottom: 50px;
+}
+.fashion-content p span{
+   text-transform: uppercase;
+}
+.fashion-content a{
+   width: 168px;
+   height: 46px;
+   padding: 12px 40px;
+   font-family: Causten;
+   font-size: 18px;
+   color: #3C4242;
+   font-weight: 600;
+   line-height: 1.2;
+   border-radius: 8px;
+   background-color: #FFFFFF;
+}
+.fashion-content a:hover,
+.fashion-content a:active{
+   box-shadow: rgba(20, 31, 20, 0.7) 0px 5px 3px inset;
+   padding: 14px 40px 10px 40px;
+   transition: all 0.15s;
+}
+/*euephoria maket, clothing block styles*/
+.clothing {
+   margin-bottom: 150px;
+}
+.clothing-container {
+   max-width: 1240px;
+   margin: 0 auto;
+}
+.clothing-content {
+   font-family: Causten;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.7;
+   color: #807D7E;
+}
+.clothing-content h3{
+   font-family: Core Sans C;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.7;
+   margin-bottom: 25px;
+}
+.clothing-title {
+   font-family: Core Sans C;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.2;
+   color: #3C4242;
+   background: url("../img/clothing.png") 0 3px no-repeat;
+   padding-left: 21px;
+   min-height: 28px;
+   margin-bottom: 30px;
+}
+.clothing-text-01{
+   margin-bottom: 25px;
+   padding-left: 21px;
+}
+.clothing-text-02{
+   margin-bottom: 20px;
+   padding-left: 21px;
+}
+.clothing-content span{
+   font-weight: 700;
+   text-transform: capitalize;
+}
+.clothing-content p:not(:last-child){
+   margin-bottom: 20px;
+}
+.clothing-content a{
+   font-family: Core Sans C;
+   font-weight: 600;
+   padding-left: 21px;
+}
+.clothing-content a:hover{
+   color: #3C4242;
+   letter-spacing: 1px;
+   text-decoration: underline ;
+}
