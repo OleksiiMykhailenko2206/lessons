@@ -1,0 +1,880 @@
+@import url("reset.css");
+@import url("fonts.css");
+html,
+body,
+.main{
+   min-width: 1000px;
+}
+/*header styles*/
+.header{
+   padding: 50px;
+   font-family: Poppins;
+   text-transform: uppercase;
+   text-align: center;
+   min-width: 730px;
+   background: rgba(101, 124, 108, 0.78);
+   box-shadow: 0 -4px 10px rgb(1, 16, 1) inset, 0 -7px 15px rgb(4, 37, 4);
+}
+.header-title{
+   margin-bottom: 50px;
+}
+.header-title h1{
+  font-weight: 700;
+  font-size: 80px;
+  text-shadow: 3px 3px 10px rgba(6, 5, 5, 0.845), 6px 6px 15px rgb(255, 255, 255);
+}
+.nav{
+   font-size: 0;
+}
+.nav a{
+   min-height: 40px;
+   font-size: 30px;
+   padding: 5px 25px;
+   border-radius: 8px;
+   background: rgb(2, 93, 2);
+   color: rgb(207, 237, 218);
+   box-shadow: 0 3px 5px black;
+   margin-bottom: 7px;
+}
+.nav a:hover{
+   color: black;
+   background: rgb(183, 244, 173);
+   outline: 1px solid black;
+   box-shadow: 0 2px 5px black inset;
+   transition: all 0.2s;
+}
+.nav a:not(:last-child){
+   margin-right: 40px;
+}
+/*practice container settings*/
+.exercises{
+   padding: 20px 15px 40px;
+   min-width: 730px;
+   background: url("../img/choice-02.png") fixed center / contain repeat;
+   }
+.exercises-container{
+   max-width: 730px;
+   margin: 0 auto;
+   padding: 15px;
+   font-family: Poppins;
+   background: rgba(44, 84, 55, 0.888);
+}
+/*nth-child block styles*/
+.nth{
+   min-width: 700px;
+   margin: 0 auto;
+   margin-bottom: 100px;
+}
+.exercises-title{
+   margin-bottom: 40px;
+   text-align: center;
+   background: rgba(165, 160, 88, 0.823);
+   border-radius: 8px;
+}
+.exercises-title h2{
+   font-size: 35px;
+   text-transform: lowercase;
+   font-weight: 700;
+   line-height: 1.3;
+   letter-spacing: 1px;
+   text-shadow: 1px 1px 3px rgba(29, 219, 54, 0.623);
+   color: white;
+}
+.nth-bord{
+   background: rgba(12, 2, 62, 0.896);
+   border-radius: 8px;
+   box-shadow: 1px 2px 5px rgb(102, 28, 172);
+   padding: 20px 40px;
+   font-size: 0;
+   text-align: right;
+}
+.nth-bord span:not(:last-child){
+   margin-right:  15px;
+}
+ .nth-bord span{
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background: rgb(161, 195, 221);
+   border: 1px solid grey;
+   box-shadow: 2px 2px 7px black, -1px -1px 2px whitesmoke;
+}
+.nth-bord span:hover{
+   border: 2px solid red;
+   background: grey;
+}
+.nth-bord span:active{
+   background: red;
+}
+[class*=-child]:not(:last-child){
+   margin-bottom: 20px;
+}
+[class*=-child]{
+   padding-top: 5px;
+   height: 40px;
+}
+.nth-bord >*::before{
+   content: "";
+   max-height: 30px;
+   font-size: 27px;
+   line-height: 1;
+   color: beige;
+   padding-right:  120px;
+   vertical-align: bottom;
+}
+.first-child::before{
+   content: "first-child";
+}
+.first-child span:first-child{
+   background: gold;
+   border: none;
+}
+.last-child::before {
+   content: "last-child";
+}
+.last-child span:last-child{
+   background: gold;
+   border: none;
+}
+.nth-child-02::before {
+   content: "nth-child(2)";
+}
+.nth-child-02 span:nth-child(2){
+   background: gold;
+   border: none;
+}
+.nth-last-child-02::before {
+   content: "nth-last-child(2)";
+}
+.nth-last-child-02 span:nth-last-child(2){
+   background: gold;
+   border: none;
+}
+.nth-child-odd::before {
+   content: "nth-child(odd)";
+}
+.nth-child-odd span:nth-child(odd){
+   background: gold;
+   border: none;
+}
+.nth-child-even::before {
+   content: "nth-child(even)";
+}
+.nth-child-even span:nth-child(even){
+   background: gold;
+   border: none;
+}
+.nth-child-nplus4::before {
+   content: "nth-child(n+4)";
+}
+.nth-child-nplus4 span:nth-child(n+4){
+   background: gold;
+   border: none;
+}
+.nth-child-3n-1::before {
+   content: "nth-child(3n-1)";
+}
+.nth-child-3n-1 span:nth-child(3n-1){
+   background: gold;
+   border: none;
+}
+.nth-child-3nplus1::before {
+   content: "nth-child(3n+1)";
+}
+.nth-child-3nplus1 span:nth-child(3n+1){
+   background: gold;
+   border: none;
+}
+.nth-child-4n::before {
+   content: "nth-child(4n)";
+}
+.nth-child-4n span:nth-child(4n){
+   background: gold;
+   border: none;
+}
+/*choice block styles*/
+.choice {
+   min-width: 700px;
+   margin-bottom: 85px;
+}
+.choice-tab {
+   text-align: center;
+   font-size: 0;
+   margin-bottom: 50px;
+}
+.red,
+.blue{
+   display: inline-block;
+   width: 350px;
+   min-height: 200px;
+}
+.red {
+   background: rgb(214, 4, 4);
+   border-bottom-left-radius: 100px;
+   border-top-left-radius: 100px;
+   box-shadow: 0 0 5px  rgb(100, 8, 8) inset, 0 0 15px rgb(228, 84, 84), 0 4px 9px black;
+}
+.blue {
+   background: rgb(3, 3, 213);
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   box-shadow: 0 0 5px rgb(8, 8, 77) inset, 0 0 15px rgb(41, 41, 194), 0 4px 9px black;
+}
+.red h3,
+.blue h3{
+   padding-top: 70px;
+   font-size: 50px;
+   color: white;
+   text-shadow: 1px 2px 3px black;
+   visibility: hidden;
+}
+.red:hover h3 {
+   visibility: visible;
+}
+.blue:hover h3 {
+   visibility: visible;
+}
+.show{
+   min-height: 160px;
+   text-align: center;
+}
+.show div:not(:last-child){
+   margin-bottom: 40px;
+}
+.show-before,
+.show-after{
+   display: inline-block;
+   min-height: 60px;
+   min-width: 350px;
+}
+.show-before{
+   background: red;
+}
+.show-after{
+   background: blue;
+}
+.show-before h3,
+.show-after h3{
+   font-size: 50px;
+   color: white;
+}
+.show-before h3::before{
+   content: "";
+   visibility: hidden;
+}
+.show-before:hover h3::before{
+   visibility: visible;
+   display: inline-block;
+   content: "::before";
+   height: 60px;
+   padding-right:40px;
+   background: rgb(33, 33, 207);
+   color: white;
+   transition: all 0.5s;
+}
+.show-after h3::after{
+   content: "";
+   visibility: hidden;
+}
+.show-after:hover h3::after{
+   visibility: visible;
+   display: inline-block;
+   content: "::after";
+   height: 60px;
+   padding-left:40px;
+   background: rgb(190, 5, 5);
+   color: white;
+   transition: all 0.5s;
+}
+/*consulting business block styles*/
+.consulting{
+   max-width: 1250px;
+   margin: 0 auto;
+   padding-top: 50px;
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 1.46;
+   color: #7D7D7D;
+   margin-bottom: 150px;
+}
+.consulting h2,
+.consulting h3,
+.consulting h4{
+   font-family: Poppins;
+   font-weight: 600;
+   color: #37393F;
+}
+.business-01 {
+   max-width: 705px;
+   margin: 0 auto;
+   padding: 0 15px;
+   margin-bottom: 150px;
+}
+.business-01-container {
+   min-width: 705px;
+   margin: 0 auto;
+}
+.business-titles {
+   max-width: 413px;
+   margin-bottom: 10px;
+   line-height: 1.2;
+}
+.business-titles h3{
+   font-weight: 500;
+   min-height: 22px;
+   margin-bottom: 16px;
+}
+.business-titles h3::before{
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   margin-right: 2px;
+}
+.business-titles h2{
+   font-size: 40px;
+   font-weight: 700;
+}
+.business-text {
+   margin-bottom: 48px;
+}
+.business-text p:not(:last-child){
+   margin-bottom: 16px;
+}
+.cards{
+   margin-bottom: 48px;
+}
+.cards-text{
+   padding: 28px 41px 28px 38px;
+}
+.cards-text p{
+   padding-left: 46px;
+}
+.cards-text h4{
+   font-size: 20px;
+   line-height: 1.5;
+   margin-bottom: 12px;
+   min-height: 30px;
+}
+.cards-text h4::before{
+   content: "";
+   display: inline-block;
+   font-size: 0;
+   width: 27px;
+   height: 27px;
+   background: url("../img/check.png") center / cover no-repeat ;
+   margin-right: 13px;
+   vertical-align: middle;
+}
+.cards div:not(:last-child){
+   margin-bottom: 31px;
+}
+.vision,
+.mission{
+   border: 1px solid #E3E3E3;
+  }
+.business-01 a{
+   width: 200px;
+   height: 65px;
+   color: #FFFFFF;
+   font-weight: 600;
+   line-height: 1.2;
+   padding: 22px 35px;
+   background-color: #6B77E5;
+   text-align: center;
+}
+.business-01 a:hover,
+.business-01 a:active{
+   background-color: #1f33e2;
+   box-shadow: 2px 1px 5px blue;
+   color:  #FFFFFF;
+   transition: all 0.3s;
+}
+/*consulting benefits block styles*/
+.benefits {
+   max-width: 722px;
+   margin: 0 auto;
+   padding: 0 15px;
+   margin-bottom: 150px;
+}
+.benefits-container {
+   min-width: 692px;
+   margin: 0 auto;
+}
+.benefits-title {
+   margin-bottom: 3px;
+}
+.benefits-title h2{
+   font-size: 30px;
+   line-height: 1.26;
+   text-transform: capitalize;
+}
+.benefits-text{
+   margin-bottom: 40px;
+}
+.benefits-text p:not(:last-child){
+   margin-bottom: 40px;
+}
+.benefits-text p:first-child{
+   margin-bottom: 42px;
+}
+.benefits-text h3{
+   font-size: 20px;
+   line-height: 1.25;
+   margin-bottom: 12px;
+   color: #6B77E5;
+}
+.benefits-card {
+   margin-bottom: 50px;
+   font-size: 0;
+}
+.benefits-bg {
+   display: inline-block;
+   width: 331px;
+   height: 262px;
+   background: url("../img/benefits.png") center / cover no-repeat;
+   margin-right: 29px;
+}
+.benefits-list {
+   display: inline-block;
+   font-size: 18px;
+   max-width: 332px;
+   vertical-align: top;
+}
+.benefits-list h3{
+   font-size: 25px;
+   line-height: 1.28;
+   margin-bottom: 15px;
+}
+.benefits-list h4{
+   font-size: 20px;
+   line-height: 1.25;
+   color: #40DDB6;
+   margin-bottom: 21px;
+}
+.list-items li{
+   min-height: 27px;
+}
+.list-items li:not(:last-child){
+   margin-bottom: 30px;
+}
+.list-items li::before{
+   content: "";
+   display: inline-block;
+   width: 27px;
+   height: 27px;
+   background: url("../img/check.png") center / cover no-repeat ;
+   vertical-align: middle;
+   margin-right: 4px;
+}
+.benefits-bottom {
+   margin-bottom: 4px;
+}
+.benefits-bottom h2{
+   font-size: 30px;
+   line-height: 1.26;
+}
+/*consulting how we work block styles*/
+.work {
+   padding: 0 15px;
+}
+.work-container {
+   max-width: 1220px;
+}
+.work-title {
+   margin-bottom: 41px;
+   text-align: center;
+}
+.work-title h3{
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 1.2;
+   margin-bottom: 16px;
+}
+.work-title h3::before{
+   content: "";
+   width: 12px;
+   height: 12px;  
+   display: inline-block;
+   vertical-align: middle;
+   background: #40DDB6;
+}
+.work-title h2{
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.work-cards {
+   font-size: 0;
+   min-height: 337px;
+   padding-top: 36px;
+}
+.work-cards div:not(:last-child){
+   margin-right: 31px;
+}
+.work-item-01,
+.work-item-02,
+.work-item-03{
+   display: inline-block;
+   max-width: 386px;
+   padding: 58px 43px;
+   background: #F4F4F4;
+   margin-bottom: 50px;
+  }
+.work-item-01::before{
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url("../img/apointment.svg") center / contain no-repeat;
+   margin: -94px 0 22px 113px;
+}
+.work-item-02::before{
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url("../img/consultation.svg") center / contain no-repeat;
+   margin: -94px 0 22px 113px;
+}
+.work-item-03::before{
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url("../img/enjoy.svg") center / contain no-repeat;
+   margin: -94px 0 22px 113px;
+}
+.work-text {
+   font-size: 18px;
+   text-align: center;
+}
+.work-text h3{
+   font-size: 25px;
+   line-height: 1.28;
+   margin-bottom: 16px;
+}
+.work-text p{
+   margin-bottom: 37px;
+}
+.work-text a{
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.2;
+   color: #6B77E5;
+}
+.work-text a:hover,
+.work-text a:active{
+   color: #293ce0;
+   text-decoration: underline;
+}
+/*jewellery block styles*/
+.jewelerry {
+   margin-bottom: 150px;
+   font-family: Cormorant Infant;
+   font-weight: 700;
+}
+.jewelerry-container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.develop-block {
+   min-width: 488px;
+   font-size: 0;
+}
+.develop-title{
+   display: inline-block;
+   max-width: 475px;
+   padding-top: 150px;
+   vertical-align: top;
+}
+.develop-title::after{
+   content: "";
+   display: inline-block;
+   width: 65%;
+   height: 3px;
+   border-bottom: 3px solid #78473B;
+   margin-top: 13px;
+}
+.develop-title h2{
+   font-size: 60px;
+   line-height: 1.1;
+   text-transform: capitalize;
+}
+.item-01,
+.item-02 {
+   display: inline-block;
+   max-width: 334px;
+   vertical-align: top;
+}
+.item-01{
+   padding-top: 41px;
+   margin-right: 55px;
+}
+.item-01-name,
+.item-02-name,
+.item-01-price,
+.item-02-price {
+   font-family: Cormorant Infant;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.4;
+}
+.item-title {
+   max-width: 339px;
+   font-family: Cormorant Infant;
+   font-size: 46px;
+   font-weight: 700;
+   line-height: 1.13;
+   margin-bottom: 31px;
+}
+/*item image create with background*/
+.image-01-bg {
+   width: 334px;
+   height: 381px;
+   background: url("../img/jewellery-01.png") center / cover no-repeat;
+   margin-right: -10px;
+   margin-left: 10px;
+   margin-top: 9px;
+}
+.item-image-02::before{/*item image create with ::before*/
+   content: "";
+   width: 334px;
+   height: 381px;
+   display: inline-block;
+   background: url("../img/jewellery-02.png") center / cover no-repeat;
+   margin-right: -10px;
+   margin-left: 10px;
+   margin-top: 9px;
+}
+.item-image-01,
+.item-image-02{
+   max-width: 334px;
+   max-height: 381px;
+   margin-bottom: 34px;
+   border: 1px solid black;
+}
+.jewelerry h4:not(:last-child),
+.jewelerry h5:not(:last-child){
+   margin-bottom: 4px;
+}
+.jewelerry a:hover{
+   text-decoration: underline;
+}
+/*game block*/
+.game {
+   background: url("../img/choice-02.png") fixed center / contain repeat;
+   min-width: 1000px;
+}
+.game-container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 40px 15px 20px;
+}
+.game-title{
+   margin-bottom: 40px;
+   background: rgba(165, 160, 88, 0.823);
+   border-radius: 8px;
+}
+.game-title h2{
+   font-size: 50px;
+   text-align: center;
+   font-family: Poppins;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.3;
+   color: white;
+}
+.game-box{
+   padding-top: 40px;
+   height: 900px;
+   background: rgba(165, 160, 88, 0.823);
+   border-radius: 8px;
+}
+.game-01 {
+   width: 80px;
+   height: 80px;
+   margin: 0 0 0 400px;
+   background: rgb(126, 9, 9);
+}
+.game-02 {
+   width: 80px;
+   height: 160px;
+   background: url("../img/game.jpg") center / cover ;
+   margin: 80px 0 0 0px;
+   display: inline-block;
+   visibility: hidden;
+}
+.game-03 {
+   display: inline-block;
+   height: 40px;
+   width: 350px;
+   margin-top: 120px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-04 {
+   display: inline-block;
+   height: 150px;
+   width: 40px;
+   margin-left: 310px;
+   margin-bottom: -40px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-05 {
+   display: inline-block;
+   width: 780px;
+   height: 30px;
+   margin-top: 120px;
+   margin-left: -540px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-06 {
+   display: inline-block;
+   width: 25px;
+   height: 160px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-07 {
+   display: inline-block;
+   height: 40px;
+   width: 350px;
+   margin-top: 120px;
+   margin-left: -125px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-08 {
+   display: inline-block;
+   height: 200px;
+   width: 20px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+   margin-left: 330px;
+}
+.game-09 {
+   display: inline-block;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+   height: 40px;
+   width: 440px;
+   margin-top: 160px;
+}
+.game-10 {
+   display: inline-block;
+   width: 30px;
+   height: 110px;
+   margin-left: 420px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-11 {
+   display: inline-block;
+   width: 100px;
+   height: 25px;
+   margin-top: 85px;
+   margin-left: -70px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-12 {
+   display: inline-block;
+   width: 15px;
+   height: 70px;
+   background: url("../img/game.jpg") center / cover ;
+   visibility: hidden;
+}
+.game-13 {
+   display: inline-block;
+   height: 70px;
+   width: 70px;
+   margin-top: 68px;
+   margin-left: -30px;
+   background-color: #40DDB6;
+}
+.game-13:active span::before{
+   content: "You Win!";
+   display: inline-block;
+   width: 340px;
+   height: 70px;
+   margin-left: -365px;
+   margin-top: -20px;
+   margin-right: 30px;
+   padding: 10px;
+   font-size: 45px;
+   font-family: Poppins;
+   background: #701818e5;
+   color: white;
+   text-align: center;
+   vertical-align: top;
+   border-radius: 8px;
+   visibility: visible;
+}
+.game-13 span{
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   font-size: 20px;
+   padding: 20px 5px;
+   text-align: center;
+}
+.game-13:active ::before{
+   visibility: visible;
+}
+.game-01:hover .game-02{
+   visibility: visible;
+}
+.game-02:hover .game-03{
+   visibility: visible;
+}
+.game-03:hover .game-04{
+   visibility: visible;
+}
+.game-04:hover .game-05{
+   visibility: visible;
+}
+.game-05:active .game-06{
+   visibility: visible;
+}
+.game-06:hover .game-07{
+   visibility: visible;
+}
+.game-07:hover .game-08{
+   visibility: visible;
+}
+.game-08:hover .game-09{
+   visibility: visible;
+}
+.game-09:hover .game-10{
+   visibility: visible;
+}
+.game-10:hover .game-11{
+   visibility: visible;
+}
+.game-11:hover .game-12{
+   visibility: visible;
+}
+/*footer*/
+.footer{
+   min-width: 1000px;
+   padding: 40px;
+   margin: 0 auto;
+   background: rgba(101, 124, 108, 0.78);
+   box-shadow: 0 -4px 10px rgb(1, 16, 1) inset, 0 -7px 15px rgb(4, 37, 4);
+}
+.footer h2{
+   font-family: Inter;
+   font-size: 75px;
+   line-height: 1.4;
+   color: #0b6a39;
+   text-transform: capitalize;
+   text-align: center;
+}
