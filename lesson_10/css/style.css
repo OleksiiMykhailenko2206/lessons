@@ -1,0 +1,124 @@
+@import url("reset.css");
+@import url("fonts.css");
+body{
+   font-family: Girassol;
+}
+.header{
+   padding: 60px 0;
+   text-align: center;
+   background: url("../img/cube.jpg")  center / contain;
+   box-shadow: 0 5px 10px #000 inset;
+}
+.header__title {
+   font-size: 70px;
+   line-height: 1.35;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   color: #fff;
+   text-shadow: 0 0 5px rgb(39, 38, 38), 0 0 15px rgb(85, 84, 84);
+}
+.main{
+   padding: 30px 0;
+   background: url("../img/stock.svg");
+}
+.main-container{
+   padding: 0 15px;
+   max-width: 1230px;
+   margin: 0 auto;
+}
+.icons{
+   border-radius: 10px;
+   padding: 30px;
+   box-shadow: 5px 5px 12px #000;
+}
+.icons--mod,
+.icons--content,
+.icons--logo{
+   margin-bottom: 30px;
+}
+.title--rastr,
+.title--logo,
+.title--content{
+   margin-bottom: 30px;
+}
+.rastr--mod{
+   box-shadow: 5px 5px 12px #000;
+}
+.title{
+   font-size: 30px;
+   text-align: center;
+   color: #000;
+}
+.title--white{
+   color: #fff;
+   margin-bottom: 30px;
+}
+.icons img{
+   height: 60px;
+   margin-bottom: 30px;
+}
+.icons img:not(:last-child){
+   margin-right: 40px;
+}
+.icons--mod{
+   background: rgb(75, 80, 69);
+}
+.icons--mod:hover{
+   background: rgb(48, 50, 45);
+   transition: all 0.3s;
+}
+.icons--content{
+   background: #ffff;
+}
+.icons--content:hover{
+   background: rgb(215, 157, 104);
+   transition: all 0.3s;
+}
+.icons--logo{
+   background: rgb(208, 208, 134);
+}
+.icons--logo:hover{
+   background: rgba(235, 235, 133, 1);
+   transition: all 0.3s;
+}
+.logo-icons img:not(:last-child){
+   margin-right: 40px;
+}
+.rastr{
+   background: linear-gradient(180deg, rgba(10,114,222,1) 0%, rgba(159,250,7,1) 100%);
+   border-radius: 10px;
+   padding: 30px;
+}
+.rastr:hover{
+   background: linear-gradient(180deg, rgb(67, 146, 230) 0%, rgb(167, 197, 116) 100%);
+   transition: all 0.3s;
+}
+.rastr--mod img{
+   margin-bottom: 30px;
+}
+.rastr__meet01 img{
+   max-width: 100%;
+}
+.rastr__meet02{
+   width: 70%;
+}
+.rastr__meet02 img{
+   width: 100%;
+}
+.rastr__meet03{
+   width: 90%;
+}
+.rastr__meet03 img{
+   width: 100%;
+}
+.footer{
+   padding: 60px 0;
+   background: url("../img/cube.jpg");
+   box-shadow: 0 5px 10px #000 inset;
+}
+.footer h2{
+   font-size: 30px;
+   letter-spacing: 4px;
+   text-align: center;
+   color: #fff;
+}
