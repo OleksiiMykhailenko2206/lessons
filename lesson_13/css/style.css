@@ -1,0 +1,691 @@
+@import url("reset.css");
+
+.wrapper {
+   min-height: 100%;
+   min-width: 1300px;
+   background: grey;
+   overflow: clip;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header--mod {
+   padding: 60px 0;
+   text-align: center;
+   background: url("../img/cube.jpg") center / contain;
+   box-shadow: 0 5px 10px #000 inset;
+}
+
+.header__title {
+   font-size: 70px;
+   line-height: 1.35;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   color: #fff;
+   text-shadow: 0 0 5px rgb(39, 38, 38), 0 0 15px rgb(85, 84, 84);
+}
+
+/*CSS CAR styles*****************************************************************/
+
+.car__container {
+   max-width: 1050px;
+   height: 600px;
+   margin: 0 auto;
+}
+
+.car__body {
+   position: relative;
+   left: 100px;
+   top: 100px;
+}
+
+.car__top {
+   height: 270px;
+   width: 700px;
+   border-radius: 57% 57% 43% / 48% 59% 11% 22%;
+   border-top: 5px solid whitesmoke;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   background: #ebe6e6;
+   z-index: 3;
+}
+
+.car__front {
+   border-radius: 34% 66% 3% 97% / 100% 24% 76% 0%;
+   border-top: 5px solid whitesmoke;
+   border-right: 5px solid whitesmoke;
+   height: 300px;
+   width: 700px;
+   position: absolute;
+   top: 50px;
+   left: 400px;
+   transform: scale(0.5) rotate(3deg);
+   background: #ebe6e6;
+   box-shadow: 0 1px 5px gray inset;
+}
+
+.front__right-signal {
+   width: 30px;
+   height: 10px;
+   position: absolute;
+   top: 160px;
+   left: 690px;
+   border-left: 25px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 10px solid gold;
+   z-index: 5;
+}
+
+.car__side-window {
+   width: 550px;
+   height: 100px;
+   position: absolute;
+   left: 110px;
+   top: 35px;
+   background: rgb(21, 20, 20);
+   border-radius: 49% 51% 11% 89% / 60% 89% 11% 40%;
+   z-index: 3;
+}
+
+.car__side-window::before {
+   content: "";
+   width: 500px;
+   height: 60px;
+   display: block;
+   position: absolute;
+   top: 20px;
+   left: 25px;
+   border-radius: 61% 39% 27% 73% / 69% 86% 14% 31%;
+   background: linear-gradient(180deg, rgba(134, 160, 235, 1) 0%, rgba(25, 39, 237, 1) 69%);
+   transform: rotate(1.5deg);
+}
+
+.car__side-window::after {
+   content: "";
+   display: block;
+   width: 40px;
+   height: 80px;
+   background: rgb(21, 20, 20);
+   position: absolute;
+   top: 10px;
+   left: 265px;
+   z-index: 3;
+   transform: rotate(-2deg);
+}
+
+.car__back-window {
+   width: 50px;
+   height: 50px;
+   background: rgb(21, 20, 20);
+   position: absolute;
+   top: 60px;
+   left: 165px;
+   z-index: 3;
+   transform: rotate(3deg);
+}
+
+.car__back {
+   width: 200px;
+   height: 150px;
+   border-left: 5px solid whitesmoke;
+   border-radius: 7% 93% 44% 56% / 88% 99% 1% 12%;
+   position: absolute;
+   top: 120px;
+   left: 0px;
+   background: #ebe6e6;
+}
+
+.car__back::before {
+   content: "";
+   display: block;
+   width: 100px;
+   height: 100px;
+   background: #ebe6e6;
+   border-radius: 91% 9% 86% 14% / 25% 100% 0% 75%;
+   position: absolute;
+   top: -20px;
+   left: -15px;
+}
+
+.car__back::after {
+   content: "";
+   display: block;
+   width: 190px;
+   height: 100px;
+   background: grey;
+   border-radius: 50%;
+   position: absolute;
+   top: -91px;
+   left: -135px;
+   transform: rotate(-12deg);
+}
+
+.tires__back-inside {
+   width: 130px;
+   height: 130px;
+   border-radius: 50%;
+   border: 10px solid silver;
+   position: absolute;
+   top: 25px;
+   left: 25px;
+}
+
+.car__back-wheel {
+   width: 200px;
+   height: 110px;
+   border-radius: 50% 50% 47% 53% / 100% 100% 0% 0%;
+   position: absolute;
+   top: 180px;
+   left: 70px;
+   border: 10px solid black;
+   border-bottom: 0;
+   z-index: 5;
+}
+
+.car__back-wheel::before {
+   content: "";
+   display: block;
+   width: 170px;
+   height: 170px;
+   border-radius: 50%;
+   border: 20px solid #242323;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+}
+
+.car__back-wheel::after {
+   content: "";
+   display: block;
+   width: 185px;
+   height: 102px;
+   border-radius: 50% 50% 47% 53% / 100% 100% 0% 0%;
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   border: 8px solid rgb(169, 164, 164);
+   border-bottom: 0;
+   z-index: 5;
+}
+
+.tires__inside {
+   width: 130px;
+   height: 130px;
+   border-radius: 50%;
+   border: 10px solid silver;
+   background: black;
+   position: absolute;
+   top: 25px;
+   left: 25px;
+}
+
+.car__front-wheel {
+   width: 200px;
+   height: 110px;
+   border-radius: 50% 50% 47% 53% / 100% 100% 0% 0%;
+   position: absolute;
+   top: 180px;
+   left: 660px;
+   border: 10px solid black;
+   border-bottom: 0;
+   z-index: 5;
+}
+
+.car__front-wheel::before {
+   content: "";
+   display: block;
+   width: 170px;
+   height: 170px;
+   border-radius: 50%;
+   border: 20px solid #242323;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+}
+
+.car__front-wheel::after {
+   content: "";
+   display: block;
+   width: 185px;
+   height: 102px;
+   border-radius: 50% 50% 47% 53% / 100% 100% 0% 0%;
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   border: 8px solid rgb(169, 164, 164);
+   border-bottom: 0;
+   z-index: 5;
+}
+
+.car__bottom-01 {
+   width: 80px;
+   height: 40px;
+   position: absolute;
+   background: #8f0404;
+   top: 250px;
+   border-radius: 100% 0% 25% 75% / 0% 100% 0% 100%;
+   z-index: 4;
+}
+
+.car__bottom-02 {
+   width: 415px;
+   height: 36px;
+   position: absolute;
+   background: #8f0404;
+   top: 255px;
+   left: 260px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   z-index: 3;
+}
+
+.car__bottom-03 {
+   width: 80px;
+   height: 36px;
+   position: absolute;
+   background: #8f0404;
+   top: 254px;
+   left: 840px;
+   border-bottom-right-radius: 25px;
+   z-index: 3;
+}
+
+.car__ground {
+   width: 900px;
+   height: 150px;
+   position: absolute;
+   top: 260px;
+   left: 20px;
+   background: #605f5f;
+   border-radius: 50%;
+}
+
+.tires__center {
+   width: 20px;
+   height: 50px;
+   background: silver;
+   position: absolute;
+}
+
+.tires__center--first {
+   top: 33px;
+   left: 80px;
+}
+
+.tires__center--second {
+   top: 55px;
+   left: 110px;
+   transform: rotate(72deg);
+}
+
+.tires__center--third {
+   top: 90px;
+   left: 100px;
+   transform: rotate(144deg);
+}
+
+.tires__center--fourth {
+   top: 90px;
+   left: 60px;
+   transform: rotate(216deg);
+}
+
+.tires__center--fifth {
+   top: 55px;
+   left: 50px;
+   transform: rotate(288deg);
+}
+
+.front__lights {
+   width: 180px;
+   height: 60px;
+   border-radius: 55% 45% 32% 68% / 12% 42% 58% 88%;
+   position: absolute;
+   top: 40px;
+   left: 505px;
+   border: 5px solid grey;
+   background: linear-gradient(110deg, rgba(209, 235, 232, 1) 0%, rgba(42, 215, 233, 1) 89%);
+   transform: rotate(4deg);
+}
+
+.front__lights::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 5px;
+   left: 50px;
+   width: 100px;
+   height: 30px;
+   border-radius: 55% 45% 19% 81% / 13% 23% 77% 87%;
+   background: #2e2e68;
+}
+
+.back__ligts {
+   position: absolute;
+   top: 15px;
+   left: -15px;
+   width: 80px;
+   height: 40px;
+   border-radius: 0% 100% 92% 8% / 6% 82% 18% 94%;
+   border: 2px solid red;
+   z-index: 6;
+   box-shadow: 0 0 5px rgb(233, 84, 84);
+   background: linear-gradient(110deg, rgba(195, 20, 20, 1) 0%, rgba(240, 109, 109, 1) 100%);
+}
+
+.back__ligts::before {
+   content: "";
+   position: absolute;
+   top: 27px;
+   left: 2px;
+   display: block;
+   width: 60%;
+   height: 5px;
+   background: gold;
+   transform: rotate(-1deg);
+   border-radius: 5px;
+}
+
+.middle__line {
+   position: absolute;
+   top: 200px;
+   width: 925px;
+   z-index: 3;
+   height: 4px;
+   background: #848282;
+   box-shadow: 0 5px 10px black;
+}
+
+.dors__handle {
+   width: 90px;
+   height: 7px;
+   position: absolute;
+   top: 160px;
+   left: 355px;
+   z-index: 3;
+   background: silver;
+   transform: rotate(1deg) skew(45deg);
+   border-radius: 2px;
+   box-shadow: 0 1px 2px black;
+}
+
+.dors__front {
+   width: 1px;
+   height: 250px;
+   background: #242222;
+   position: absolute;
+   top: 35px;
+   left: 400px;
+   transform: rotate(-3deg);
+   z-index: 4;
+   box-shadow: -2px 0 3px black;
+}
+
+.dors__bottom-front {
+   width: 395px;
+   height: 1px;
+   background: #242222;
+   position: absolute;
+   top: 285px;
+   left: 266px;
+   z-index: 5;
+   box-shadow: -2px 0 3px black;
+}
+
+.dors__back {
+   width: 1px;
+   height: 80px;
+   background: #242222;
+   position: absolute;
+   top: 55px;
+   left: 190px;
+   z-index: 4;
+   box-shadow: -2px 0 3px black;
+   transform: rotate(4deg);
+}
+
+.dors__back::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 80px;
+   left: 0;
+   width: 1px;
+   height: 48px;
+   background: #242222;
+   transform: rotate(-10deg);
+   transform-origin: 0 0;
+   box-shadow: -2px 0 3px black;
+}
+
+.dors__right-front {
+   width: 1px;
+   height: 40px;
+   background: #242222;
+   position: absolute;
+   top: 125px;
+   left: 663px;
+   z-index: 4;
+   box-shadow: -2px 0 3px black;
+   transform: rotate(-13deg);
+}
+
+.dors__right-front::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: 11;
+   top: 40px;
+   left: 0;
+   width: 1px;
+   height: 120px;
+   background: #242222;
+   transform: rotate(17deg);
+   transform-origin: 0 0;
+   box-shadow: -2px 0 3px black;
+}
+
+.car__mirror {
+   width: 50px;
+   height: 30px;
+   position: absolute;
+   top: 100px;
+   left: 600px;
+   background: linear-gradient(180deg, rgba(241, 242, 244, 1) 0%, rgba(80, 80, 80, 1) 69%);
+   border-radius: 78% 22% 46% 54% / 11% 91% 9% 89%;
+   border-bottom: 2px solid #242323;
+   border-top: 2px solid whitesmoke;
+   transform: rotate(4deg);
+   z-index: 5;
+}
+
+.car__mirror::before {
+   content: "";
+   width: 20px;
+   height: 10px;
+   display: block;
+   background: #848282;
+   position: absolute;
+   border-radius: 90% 10% 0% 100% / 0% 58% 42% 100%;
+   border-right: 3px solid rgb(86, 85, 85);
+   border-bottom: 2px solid #242323;
+   top: 20px;
+   left: 39px;
+   z-index: 3;
+}
+
+/*PRACTICE styles***********************************************/
+
+
+.practice__container {
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.practice__bord{
+   text-align: center;
+}
+
+.property__title {
+   font-size: 40px;
+   text-align: center;
+   text-transform: capitalize;
+   margin-bottom: 50px;
+}
+
+[class*="__block"] {
+   width: 200px;
+   height: 200px;
+   background: #fff;
+   border-radius: 5px;
+   display: inline-block;
+   margin: 0 60px 60px 0;
+   position: relative;
+}
+
+[class*="-3d__block"] {
+   perspective: 300px;
+}
+
+[class*="__item"] {
+   font-size: 30px;
+   color: #000;
+   text-align: center;
+   border: 2px dashed rgba(172, 255, 47, 0.478);
+   width: 200px;
+   height: 200px;
+   background: rgba(0, 128, 0, 0.707);
+   padding: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.property__translate {
+   font-size: 0;
+}
+
+.translate__block:hover .translate__item-01 {
+   transform: translate(20px, 20px);
+}
+
+.translate__block:hover .translate__item-02 {
+   transform: translate(10%, -20%);
+}
+
+.property__scale {
+   font-size: 0;
+}
+
+.scale__block:hover .scale__item-01 {
+   transform: scale(1);
+}
+
+.scale__block:hover .scale__item-02 {
+   transform: scale(1.2);
+}
+
+.scale__block:hover .scale__item-03 {
+   transform: scale(0.8, 0.5);
+}
+
+.scale__block:hover .scale__item-04 {
+   transform: scale(0.8);
+}
+
+.property__rotate {
+   font-size: 0;
+}
+
+.rotate__block:hover .rotate__item-01 {
+   transform: rotate(25deg);
+}
+
+.rotate__block:hover .rotate__item-02 {
+   transform: rotate(-15deg);
+}
+
+.rotate__block:hover .rotate__item-03 {
+   transform: rotateX(40deg);
+}
+
+.rotate__block:hover .rotate__item-04 {
+   transform: rotateY(-50deg);
+}
+
+.property__skew {
+   font-size: 0;
+}
+
+.skew__block:hover .skew__item-01 {
+   transform: skew(20deg);
+}
+
+.skew__block:hover .skew__item-02 {
+   transform: skew(0, 10deg);
+}
+
+.property__origin {
+   font-size: 0;
+}
+
+.origin__block:hover .origin__item-01 {
+   transform-origin: 10% 50%;
+   transform: rotate(45deg);
+}
+
+.origin__block:hover .origin__item-02 {
+   transform-origin: left top;
+   transform: scale(0.8);
+}
+
+.origin__block:hover .origin__item-03 {
+   transform-origin: 100% 100%;
+   transform: rotate(10deg);
+}
+
+.origin__block:hover .origin__item-04 {
+   transform-origin: 100% 20px;
+   transform: scale(0.6);
+}
+
+.translate-3d__block:hover .translate-3d__item-01 {
+   transform: translateX(30px);
+}
+
+.translate-3d__block:hover .translate-3d__item-02 {
+   transform: translateY(-50%);
+}
+
+.translate-3d__block:hover .translate-3d__item-03 {
+   transform: translateZ(-50px);
+}
+
+.translate-3d__block:hover .translate-3d__item-04 {
+   transform: translateZ(50px);
+}
+
+.scale-3d__block:hover .scale-3d__item-01 {
+   transform: scale3d(0.7, 1.2, 2);
+}
+
+.scale-3d__block:hover .scale-3d__item-02 {
+   transform: scale3d(1.5, 0.5, 1.1);
+}
+
+.rotate-3d__block:hover .rotate-3d__item-01 {
+   transform: rotate3d(45, 180, 0, 180deg);
+}
+
+.rotate-3d__block:hover .rotate-3d__item-02 {
+   transform: rotate3d(0, 25, 10, -30deg);
+}
+
+.rotate-3d__block:hover .rotate-3d__item-03 {
+   transform: rotate3d(-30, 25, -10, 40deg);
+}
+
+.rotate-3d__block:hover .rotate-3d__item-04 {
+   transform: rotate3d(45, 45, 45, 45deg);
+}
