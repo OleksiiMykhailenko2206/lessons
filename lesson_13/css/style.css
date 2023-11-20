@@ -523,15 +523,14 @@
    margin: 0 auto;
 }
 
-.practice__bord{
-   text-align: center;
-}
-
 .property__title {
    font-size: 40px;
    text-align: center;
    text-transform: capitalize;
    margin-bottom: 50px;
+}
+.practice__bord{
+   font-size: 0;
 }
 
 [class*="__block"] {
@@ -540,12 +539,12 @@
    background: #fff;
    border-radius: 5px;
    display: inline-block;
-   margin: 0 60px 60px 0;
    position: relative;
+   margin-right: 60px;
 }
 
 [class*="-3d__block"] {
-   perspective: 300px;
+   perspective: 200px;
 }
 
 [class*="__item"] {
@@ -560,8 +559,15 @@
    position: absolute;
    top: 0;
    left: 0;
+   
 }
 
+.practice__bord > * {
+   margin-bottom: 60px;
+}
+.practice__bord:last-child{
+   margin-bottom: 0;
+}
 .property__translate {
    font-size: 0;
 }
