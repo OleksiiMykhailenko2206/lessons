@@ -568,9 +568,6 @@
 .practice__bord:last-child{
    margin-bottom: 0;
 }
-.property__translate {
-   font-size: 0;
-}
 
 .translate__block:hover .translate__item-01 {
    transform: translate(20px, 20px);
@@ -578,10 +575,6 @@
 
 .translate__block:hover .translate__item-02 {
    transform: translate(10%, -20%);
-}
-
-.property__scale {
-   font-size: 0;
 }
 
 .scale__block:hover .scale__item-01 {
@@ -600,10 +593,6 @@
    transform: scale(0.8);
 }
 
-.property__rotate {
-   font-size: 0;
-}
-
 .rotate__block:hover .rotate__item-01 {
    transform: rotate(25deg);
 }
@@ -620,20 +609,12 @@
    transform: rotateY(-50deg);
 }
 
-.property__skew {
-   font-size: 0;
-}
-
 .skew__block:hover .skew__item-01 {
    transform: skew(20deg);
 }
 
 .skew__block:hover .skew__item-02 {
    transform: skew(0, 10deg);
-}
-
-.property__origin {
-   font-size: 0;
 }
 
 .origin__block:hover .origin__item-01 {
