@@ -1,0 +1,438 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+   background: #FFFFFF;
+   color: #000;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: clip;
+}
+
+.wrapper >main {
+   flex-grow: 1;
+}
+
+.header {
+   padding: 60px 0;
+   text-align: center;
+   background: url("../img/cube.jpg") center / contain;
+   box-shadow: 0 5px 10px #000 inset;
+}
+
+.header__title {
+   font-size: 70px;
+   line-height: 1.35;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   color: #fff;
+   text-shadow: 0 0 5px rgb(39, 38, 38), 0 0 15px rgb(85, 84, 84);
+}
+
+.main {
+   padding: 100px 0;
+}
+
+/*form-01********************************************/
+
+*label {
+   text-transform: capitalize;
+}
+
+.form-01 {
+   margin-bottom: 100px;
+}
+
+.form-01__container {
+   max-width: 1250px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.request__title {
+   text-align: center;
+   text-transform: capitalize;
+   color: #37393F;
+   margin-bottom: 50px;
+}
+
+.request__title>:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.title__label {
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 500;
+   display: flex;
+   gap: 6px;
+   align-items: center;
+   justify-content: center;
+}
+
+.title__label::before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+}
+
+.title__main-title {
+   text-align: center;
+   font-family: Poppins;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 121%;
+}
+
+.request__form {}
+
+.call-back__form {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 28px;
+   column-gap: 35px;
+   font-family: Inter;
+   font-size: 18px;
+   color: #37393F;
+}
+
+.call-back__form>input {
+   display: flex;
+   flex: 1 1 591px;
+   padding: 0 40px;
+   height: 65px;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+}
+
+.call-back__name-box {
+   display: flex;
+   flex: 1 1 591px;
+   position: relative;
+}
+
+.call-back__name {
+   width: 100%;
+   padding: 0 40px;
+   height: 65px;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+}
+
+.call-back__fake-holder {
+   color: #767677;
+   position: absolute;
+   top: 23px;
+   left: 40px;
+   opacity: 1;
+   transition: all 0.2s;
+}
+
+.call-back__name:focus+span {
+   top: -23px;
+   transform: scale(0.95);
+   opacity: 0.9;
+}
+
+.call-back__email {}
+
+.call-back__tel {}
+
+.call-back__subj {}
+
+.call-back__message {
+   display: flex;
+   flex: 1 1 100%;
+   padding: 22px 40px;
+   min-height: 222px;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+   resize: vertical;
+}
+
+.request__btn {
+   display: flex;
+   flex: 1 1 auto;
+   justify-content: center;
+}
+
+.request__button {
+   color: #FFFFFF;
+   background: #6B77E5;
+   text-align: center;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+   padding: 22px 61px;
+   transition: all 0.2s;
+}
+
+.request__button:hover {
+   background: #505edb;
+   text-decoration: underline;
+}
+
+/*form-02******************************************/
+
+.form-02 {}
+
+.form-02__container {
+   max-width: 925px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.info {
+   color: #3C4242;
+   font-family: Causten;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.check__shipping:focus+.check__label,
+.check__billing:focus+.check__label {
+   outline: 2px solid #000;
+   border-radius: 4px;
+}
+
+.info__title {
+   font-family: Core Sans C;
+   font-size: 28px;
+   line-height: 120%;
+   letter-spacing: 0.56px;
+   margin-bottom: 50px;
+}
+
+.info__title>:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.info__main-title {}
+
+.info__label {
+   font-size: 22px;
+}
+
+.info__form {}
+
+.address {}
+
+.address__inp {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 31px;
+   column-gap: 42px;
+   letter-spacing: 0.36px;
+   margin-bottom: 30px;
+}
+
+.address__inp input,
+.address__inp select {
+   min-height: 55px;
+   padding: 0 22px;
+   background: #F6F6F6;
+   border-radius: 8px;
+   color: #807D7E;
+   font-size: 16px;
+   font-weight: 400;
+   appearance: none;
+}
+
+.address__inp>div {
+   display: flex;
+   flex: 1 1 426px;
+}
+
+.address__flex {
+   display: flex;
+   flex: 1 1 100%;
+   flex-direction: column;
+   gap: 10px;
+   width: 100%;
+}
+
+.address__first-n {}
+
+.address__last-n {}
+
+.address__country {}
+
+.address__company {}
+
+.address__street {}
+
+.address__suite {}
+
+.address__city {}
+
+.address__state {
+   position: relative;
+}
+
+.address__label {
+   order: 1;
+}
+
+.address__select-state {
+   order: 2;
+}
+
+.address__label::after {
+   content: "";
+   display: block;
+   width: 22px;
+   height: 22px;
+   position: absolute;
+   top: 45px;
+   right: 22px;
+   background: url("../img/icons/down.svg") center no-repeat;
+   transition: all 0.2s;
+   pointer-events: none;
+}
+
+.address__select-state:focus+.address__label::after {
+   transform: rotate(90deg);
+}
+
+.address__phone {}
+
+.address__number {}
+
+.address__postal {}
+
+.address__instr {
+   display: flex;
+   flex: 1 1 100%;
+}
+
+.instruction__flex {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 10px;
+}
+
+.instruction__textarea {
+   min-height: 150px;
+   padding: 18px 22px;
+   border-radius: 8px;
+   background: #F6F6F6;
+   width: 100%;
+   resize: vertical;
+}
+
+.address__check {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-bottom: 60px;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.check__flex {
+   display: inline-flex;
+   position: relative;
+}
+
+.check__shipping,
+.check__billing {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.check__label {
+   padding-left: 32px;
+   cursor: pointer;
+}
+
+.check__label::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   flex: 0 0 20px;
+   border: 3px solid #BEBCBD;
+   border-radius: 3px;
+}
+
+.check__label::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 3px;
+   width: 18px;
+   height: 18px;
+   display: flex;
+   flex: 0 0 18px;
+   background: url("../img/icons/check-mark.svg") center no-repeat;
+   opacity: 0;
+   transition: all 0.1s;
+}
+
+[class*="--checkbox"]:checked+.check__label::after {
+   opacity: 0.9;
+}
+
+.address__buttons {
+   display: flex;
+   flex-shrink: 0;
+   gap: 30px;
+}
+
+.button__submit,
+.button__reset {
+   font-family: Causten;
+   font-weight: 700;
+   padding: 12px 40px;
+   border-radius: 8px;
+   color: #807D7E;
+   text-align: center;
+   font-size: 20px;
+   background: #F6F6F6;
+   transition: all 0.1s;
+}
+
+.button__submit--active-button {
+   background: #8A33FD;
+   color: #FFFFFF;
+}
+
+.button__reset {}
+
+.address__buttons>button:hover {
+   box-shadow: 0 2px 12px #000 inset, 0 1px 5px #4902a5;
+}
+
+/*footer*****************************************/
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 0;
+   flex-shrink: 0;
+   padding: 40px 0;
+   background: #BEBCBD;
+}
+
+.footer__title {
+   color: black;
+   font-size: 30px;
+   text-transform: capitalize;
+}
