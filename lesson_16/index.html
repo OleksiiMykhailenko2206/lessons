@@ -30,10 +30,10 @@
                   <form class="call-back__form" enctype="multipart/form-data" action="#" method="GET"
                      autocomplete="off">
                      <div class="call-back__name-box">
-                        <input class="call-back__name" type="text" name="name" required>
-                        <span class="call-back__fake-holder">
-                           Your Name (span absolute)
-                        </span>
+                        <input class="call-back__name" type="text" name="name" id="name" required>
+                        <label for="name" class="call-back__fake-holder">
+                           Your Name (label absolute+valid)
+                        </label>
                      </div>
                      <input class="call-back__email" type="email" name="email" required placeholder="Email Address">
                      <input class="call-back__tel" type="tel" name="tel" placeholder="Phone Number">
@@ -63,45 +63,59 @@
                      <div class="address__inp">
                         <div class="address__first-n">
                            <div class="address__flex">
-                              <label for="first-name">First Name*</label>
+                              <div class="address__label-wrap">
+                                 <label for="first-name">First Name*</label>
+                              </div>
                               <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
                            </div>
                         </div>
                         <div class="address__last-n">
                            <div class="address__flex">
-                              <label for="last-name">Last Name*</label>
+                              <div class="address__label-wrap">
+                                 <label for="last-name">Last Name*</label>
+                              </div>
                               <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
                            </div>
                         </div>
                         <div class="address__country">
                            <div class="address__flex">
-                              <label for="country">Country / Region*</label>
+                              <div class="address__label-wrap">
+                                 <label for="country">Country / Region*</label>
+                              </div>
                               <input type="text" id="country" name="country" placeholder="Country / Region" required>
                            </div>
                         </div>
                         <div class="address__company">
                            <div class="address__flex">
-                              <label for="company">Company Name</label>
+                              <div class="address__label-wrap">
+                                 <label for="company">Company Name</label>
+                              </div>
                               <input type="text" id="company" name="company" placeholder="Company (optional)">
                            </div>
                         </div>
                         <div class="address__street">
                            <div class="address__flex">
-                              <label for="street">Street Address*</label>
+                              <div class="address__label-wrap">
+                                 <label for="street">Street Address*</label>
+                              </div>
                               <input type="text" id="street" name="street" placeholder="House number and street name"
                                  required>
                            </div>
                         </div>
                         <div class="address__suite">
                            <div class="address__flex">
-                              <label for="suite">Apt, suite, unit</label>
+                              <div class="address__label-wrap">
+                                 <label for="suite">Apt, suite, unit</label>
+                              </div>
                               <input type="text" id="suite" name="suite"
                                  placeholder="apartment, suite, unit, etc. (optional)">
                            </div>
                         </div>
                         <div class="address__city">
                            <div class="address__flex">
-                              <label for="city">City*</label>
+                              <div class="address__label-wrap">
+                                 <label for="city">City*</label>
+                              </div>
                               <input type="text" id="city" name="city" placeholder="Town / City" required>
                            </div>
                         </div>
@@ -113,25 +127,33 @@
                                  <option value="03">Atlantida</option>
                                  <option value="04">Wacanda</option>
                               </select>
-                              <label class="address__label" for="state">State*</label>
+                              <div class="address__label-wrap">
+                                 <label class="address__label" for="state">State*</label>
+                              </div>
                            </div>
                         </div>
                         <div class="address__phone">
                            <div class="address__flex">
-                              <label for="phone">Phone*</label>
+                              <div class="address__label-wrap">
+                                 <label for="phone">Phone*</label>
+                              </div>
                               <input class="address__phone-inp" type="tel" id="phone" name="phone" placeholder="Phone"
                                  required>
                            </div>
                         </div>
                         <div class="address__postal">
                            <div class="address__flex">
-                              <label for="postal">Postal Code*</label>
+                              <div class="address__label-wrap">
+                                 <label for="postal">Postal Code*</label>
+                              </div>
                               <input type="number" name="postal" id="postal" placeholder="Postal Code" required>
                            </div>
                         </div>
                         <div class="address__instr instruction">
                            <div class="instruction__flex">
-                              <label for="delivery">Delivery Instruction</label>
+                              <div class="address__label-wrap">
+                                 <label for="delivery">Delivery Instruction</label>
+                              </div>
                               <textarea class="instruction__textarea" name="delivery" id="delivery"
                                  placeholder="Delivery Instruction" maxlength="500"></textarea>
                            </div>
